@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		60E31FE71D11EFFE0091AFD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E31FE61D11EFFE0091AFD7 /* AppDelegate.swift */; };
-		60E31FE91D11EFFE0091AFD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E31FE81D11EFFE0091AFD7 /* ViewController.swift */; };
 		60E31FEC1D11EFFE0091AFD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E31FEA1D11EFFE0091AFD7 /* Main.storyboard */; };
 		60E31FEE1D11EFFE0091AFD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E31FED1D11EFFE0091AFD7 /* Assets.xcassets */; };
 		60E31FF11D11EFFE0091AFD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E31FEF1D11EFFE0091AFD7 /* LaunchScreen.storyboard */; };
+		60E31FF91D11F0B90091AFD7 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E31FF81D11F0B90091AFD7 /* MoviesViewController.swift */; };
+		60E31FFC1D11FB8B0091AFD7 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E31FFB1D11FB8B0091AFD7 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		60E31FE31D11EFFE0091AFD7 /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E31FE61D11EFFE0091AFD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60E31FE81D11EFFE0091AFD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		60E31FEB1D11EFFE0091AFD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60E31FED1D11EFFE0091AFD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60E31FF01D11EFFE0091AFD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60E31FF21D11EFFE0091AFD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60E31FF81D11F0B90091AFD7 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoviesViewController.swift; path = ../MoviesViewController.swift; sourceTree = "<group>"; };
+		60E31FFB1D11FB8B0091AFD7 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		60E31FE51D11EFFE0091AFD7 /* Flix */ = {
 			isa = PBXGroup;
 			children = (
+				60E31FFD1D11FB940091AFD7 /* View Controllers */,
+				60E31FFA1D11FB6A0091AFD7 /* Views */,
 				60E31FE61D11EFFE0091AFD7 /* AppDelegate.swift */,
-				60E31FE81D11EFFE0091AFD7 /* ViewController.swift */,
 				60E31FEA1D11EFFE0091AFD7 /* Main.storyboard */,
 				60E31FED1D11EFFE0091AFD7 /* Assets.xcassets */,
 				60E31FEF1D11EFFE0091AFD7 /* LaunchScreen.storyboard */,
 				60E31FF21D11EFFE0091AFD7 /* Info.plist */,
 			);
 			path = Flix;
+			sourceTree = "<group>";
+		};
+		60E31FFA1D11FB6A0091AFD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60E31FFB1D11FB8B0091AFD7 /* MovieCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		60E31FFD1D11FB940091AFD7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				60E31FF81D11F0B90091AFD7 /* MoviesViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60E31FE91D11EFFE0091AFD7 /* ViewController.swift in Sources */,
 				60E31FE71D11EFFE0091AFD7 /* AppDelegate.swift in Sources */,
+				60E31FF91D11F0B90091AFD7 /* MoviesViewController.swift in Sources */,
+				60E31FFC1D11FB8B0091AFD7 /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
